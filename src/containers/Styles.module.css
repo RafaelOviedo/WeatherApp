@@ -4,6 +4,9 @@ body {
     height: auto;
     font-family: sans-serif;
     box-sizing: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("https://cdn.wallpapersafari.com/95/42/rBSTlc.jpg");
+    background-attachment: fixed;
 }
 
 /* Configurando la NavBar */
@@ -186,8 +189,9 @@ body {
     width: 320px;
     height: 230px;
     border-radius: 15px;
-    margin-top: 230px;
+    margin-top: 70px;
     position: relative;
+    top: 15%;
 }
 
 .cardButton {
@@ -260,7 +264,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    overflow: hidden;
+    background-attachment: fixed;
 }
 
 .cardsTextContainer {
