@@ -1,0 +1,304 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* Configurando la NavBar */
+.navBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    background: #008a8a;
+    z-index: 10;
+}
+
+.navBarLogo {
+    position: absolute;
+    top: 25%;
+    left: 16%;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.navMenu {
+    position: absolute;
+    top: 30%;
+    left: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    height: auto;
+    z-index: 100;
+    color: white;
+}
+
+.navItem {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.navMenu .navItem:hover {
+    color: #00ffff;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* Configurando la barra de busqueda */
+.searchBar {
+    position: absolute;
+    top: 10px;
+    left: 37.5%;
+}
+
+.searchBarInput {
+    border-radius: 20px 0 0 20px;
+    width: 300px;
+    height: 40px;
+    border: 1px solid gray;
+    border-right: none;
+    outline: none;
+}
+
+.searchBarBtn {
+    border-radius: 0 20px 20px 0;
+    width: 100px;
+    height: 40px;
+    background: #19dada;
+    color: white;
+    border: none;
+    margin-top: 4px;
+}
+.searchBarBtn:active {
+    background: #00ffff;
+}
+.searchBarBtn:focus {
+    outline: none;
+}
+
+/* Configurando el header */
+
+.headerContainer {
+    margin-top: 10vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 90vh;
+    font-size: 30px;
+    color: white;
+    overflow: hidden;
+}
+
+.headerImage {
+    max-width: 100%;
+    height: auto;
+    filter: brightness(60%);
+}
+
+.mainTitle {
+    position: absolute;
+    left: 15%;
+    top: 28%;
+    font-size: 50px;
+    z-index: 10;
+}
+
+.subTitle {
+    position: absolute;
+    left: 10%;
+    top: 37%;
+    z-index: 10;
+}
+
+/* Configurando el about section */
+.aboutContainer {
+    margin-top: 10vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 90vh;
+    font-size: 30px;
+    color: white;
+    overflow: hidden;
+}
+
+.aboutSectionImage {
+    height: auto;
+    width: 100%;
+    filter: brightness(60%);
+}
+
+.aboutTitle {
+    font-size: 70px;
+    font-weight: bold;
+    position: absolute;
+    top: 12%;
+    left: 20%;
+}
+
+.aboutText {
+    font-size: 20px;
+    position: absolute;
+    top: 30%;
+    left: 7%;
+    margin-right: 10%;
+}
+
+.socialMediaBox {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    position: absolute;
+    top: 70%;
+    left: 24%;
+}
+
+.githubLogo,
+.codepenLogo,
+.instagramLogo {
+    background: white;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+/* Configurando la tarjeta */
+.cardBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "button button button button"
+        "title  title  title  title"
+        "props1 props1 props2 props2"
+        "info1   info1   info2   info2"
+        "image   image   image   image";
+    background: white;
+    width: 320px;
+    height: 230px;
+    border-radius: 15px;
+    margin-top: 230px;
+    position: relative;
+}
+
+.cardButton {
+    grid-area: button;
+    width: 60px;
+    height: 30px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px 15px 5px 5px;
+    position: relative;
+    top: 10%;
+    left: 80%;
+    outline: none;
+}
+.cardButton:focus {
+    outline: 0;
+}
+.cardButton:active {
+    background: darkred;
+}
+
+.cardTitle {
+    color: black;
+    grid-area: title;
+    text-align: center;
+}
+.cardTitle:hover {
+    color: #19dada;
+    text-decoration: none;
+}
+
+.property1 {
+    grid-area: props1;
+    margin-left: 40%;
+}
+
+.property2 {
+    grid-area: props2;
+    margin-left: 18%;
+}
+
+.info1 {
+    grid-area: info1;
+    margin-left: 60%;
+}
+
+.info2 {
+    grid-area: info2;
+    margin-left: 35%;
+}
+
+.weatherIcon {
+    background: lightgray;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 150%;
+    margin-bottom: 5px;
+}
+
+/* Configurando el weather section */
+.cardsSection {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("https://cdn.wallpapersafari.com/95/42/rBSTlc.jpg");
+    margin-top: 10vh;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.cardsTextContainer {
+    text-align: center;
+    position: absolute;
+    font-weight: bold;
+    font-size: 20px;
+    top: 12%;
+    left: 35%;
+    color: white;
+}
+
+/* Configurando el city section */
+
+.citySection {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("https://cdn.wallpapersafari.com/95/42/rBSTlc.jpg");
+    margin-top: 10vh;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.infoCityContainer {
+    text-align: center;
+    background: white;
+    width: 320px;
+    height: 230px;
+    border-radius: 15px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.alternativeText {
+    text-align: center;
+    margin-top: 100px;
+}
