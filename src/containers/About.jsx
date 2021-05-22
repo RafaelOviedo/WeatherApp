@@ -26,7 +26,7 @@ export default function About(props) {
                         <img
                             className={style.codepenLogo}
                             src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png"
-                            alt="github logo"
+                            alt="codepen logo"
                         />
                     </a>
                 </li>
@@ -44,7 +44,7 @@ export default function About(props) {
                         <img
                             className={style.instagramLogo}
                             src="https://img.icons8.com/ios-glyphs/452/instagram-circle.png"
-                            alt="github logo"
+                            alt="instagram logo"
                         />
                     </a>
                 </li>
