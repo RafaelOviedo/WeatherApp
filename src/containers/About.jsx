@@ -43,7 +43,7 @@ export default function About(props) {
                     <a target="_blank" href="https://www.instagram.com/dgtgnd/">
                         <img
                             className={style.instagramLogo}
-                            src="https://img.icons8.com/ios-glyphs/452/instagram-circle.png"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGvnf8ZiiTL74jY3242kvO2bBstJTyfyo-WA&usqp=CAU"
                             alt="instagram logo"
                         />
                     </a>
