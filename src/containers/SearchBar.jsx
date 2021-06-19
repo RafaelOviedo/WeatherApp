@@ -22,7 +22,7 @@ export default function SearchBar(props) {
             />
             <input
                 type="submit"
-                value="Buscar"
+                value="Search"
                 className={style.searchBarBtn}
             />
 
